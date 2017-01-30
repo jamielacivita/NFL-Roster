@@ -1,0 +1,12 @@
+#div_team   {
+    display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content:center;}
+
+.player-card    {
+width: 300px;}
+
+#players-list-div {  
+max-height: 600px;
+overflow-y:auto;}

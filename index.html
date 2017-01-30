@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Fan Football Team Creator</title>
+    <title>Football Team Creator</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="container-fluid">
+        <div class="panel panel-default">
+            <div class="panel-heading">My Team</div>
+            <div class="panel-body">
+                <div id="div_team" class="player-roster text-center">
+                </div>
+            </div>
+        </div>
 
-    <div id="div_team">
-        <h1>Team Placeholder</h1>
-    </div>
-    <div id="div_players">
-        <h1>Players Placeholder</h1>
-    </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Search for Player</label>
+            <input type="search" class="form-control" id="playerSearchInput" placeholder="Smith" onkeyup="ctrl.searchKey()">
+</div>
 
+<div id="players-list-div">
+<ul id="ul_players" class="list-group">
+    <li class="list-group-item">Loading Players...</li>
+</ul>
+</div>
+</div>
 
-    <script src="service.js"></script>
-    <script src="control.js"></script>
-    <script src="app.js"></script>
+<script src="service.js"></script>
+<script src="control.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>
